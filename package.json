@@ -11,7 +11,7 @@
     "url": "git+https://github.com/SIMYEONAH/wetube-coding.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "YeonA <simya000528@gmail.com>",
   "license": "MIT",
