@@ -1,11 +1,12 @@
+
 import express from "express";
-import {edit, remove, logout, see} from "../controllers/userController";
+import { see, edit, upload, deleteVideo } from "../controllers/videoController";
 
-const userRouter = express.Router();
+const videoRouter = express.Router();
 
-userRouter.get("/logout", logout);
-userRouter.get("/edit", edit);
-userRouter.get("/remove", remove);
-userRouter.get(":id", see);
+videoRouter.get("/:id(\\d+)", see);
+videoRouter.get("/:id(\\d+)/edit", edit);
+videoRouter.get("/:id(\\d+)/delete", deleteVideo);
+videoRouter.get("/upload", upload);
 
-export default userRouter;
+export default videoRouter;
