@@ -1,5 +1,5 @@
 export const trending = (req, res) => {
-  const videos = [
+  let videos = [
     {
       title: "First Video",
       rating: 5,
