@@ -1,15 +1,11 @@
 import express from "express";
-import {
-  watch,
-  upload,
-  deleteVideo,
-  getEdit,
-  postEdit,
-} from "../controllers/videoController";
+import { join, login } from "../controllers/userController";
+import { trending, search } from "../controllers/videoController";
 
-const videoRouter = express.Router();
+const globalRouter = express.Router();
 
-videoRouter.get("/:id(\\d+)", watch);
-videoRouter.route("/:id(\\d+)/edit").get(getEdit).post(postEdit);
+globalRouter.get("/", trending);
+globalRouter.get("/join", join);
+globalRouter.get("/login", login);
 
-export default videoRouter;
+export default globalRouter;
