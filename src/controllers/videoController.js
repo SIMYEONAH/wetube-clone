@@ -45,7 +45,7 @@ export const postEdit = (req, res) => {
 };
 
 export const getUpload = (req, res) => {
-  return res.render("upload");
+  return res.render("upload", {pageTitle: "Upload Video"});
 };
 
 export const postUpload = (req, res) => {
