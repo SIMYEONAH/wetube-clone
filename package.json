@@ -21,6 +21,7 @@
   "homepage": "https://github.com/SIMYEONAH/wetube-coding#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "mongoose": "^6.9.2",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
